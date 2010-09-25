@@ -5,4 +5,67 @@ Heated Platfor is raised to 120 Celsius.
 
 Below will be the diff between official version and this version.
 
+ruvirtual:tmp2 rianders$ diff mh-mk5-abs-heatedplatform-skeinforge/ cupcake-mk5-heated-platform-abs/
+diff mh-mk5-abs-heatedplatform-skeinforge/carve.csv cupcake-mk5-heated-platform-abs/carve.csv
+2c2
+< Extrusion Width over Thickness (ratio):	1.8
+---
+> Extrusion Width over Thickness (ratio):	1.45
+10c10
+< Layer Thickness (mm):	0.37
+---
+> Layer Thickness (mm):	0.36
+diff mh-mk5-abs-heatedplatform-skeinforge/fill.csv cupcake-mk5-heated-platform-abs/fill.csv
+5c5
+< Extra Shells on Base (layers):	2
+---
+> Extra Shells on Base (layers):	1
+16,17c16,17
+< Grid Hexagonal	True
+< Grid Rectangular	False
+---
+> Grid Hexagonal	False
+> Grid Rectangular	True
+19c19
+< Interior Infill Density over Exterior Density (ratio):	0.1
+---
+> Interior Infill Density over Exterior Density (ratio):	0.9
+Common subdirectories: mh-mk5-abs-heatedplatform-skeinforge/gcode_scripts and cupcake-mk5-heated-platform-abs/gcode_scripts
+diff mh-mk5-abs-heatedplatform-skeinforge/inset.csv cupcake-mk5-heated-platform-abs/inset.csv
+2c2
+< Extrusion Perimeter Width over Thickness (ratio):	1.583
+---
+> Extrusion Perimeter Width over Thickness (ratio):	1.3
+diff mh-mk5-abs-heatedplatform-skeinforge/oozebane.csv cupcake-mk5-heated-platform-abs/oozebane.csv
+4c4
+< Early Shutdown Distance (millimeters):	0.3
+---
+> Early Shutdown Distance (millimeters):	0.2
+diff mh-mk5-abs-heatedplatform-skeinforge/raft_ABS.csv cupcake-mk5-heated-platform-abs/raft_ABS.csv
+2c2
+< Activate Raft:	False
+---
+> Activate Raft:	True
+33c33
+< windowPositionRaft Preferences	7+51
+---
+> windowPositionRaft Preferences	6+23
+diff mh-mk5-abs-heatedplatform-skeinforge/skeinforge.csv cupcake-mk5-heated-platform-abs/skeinforge.csv
+2d1
+< Open File to be Skeinforged	
+diff mh-mk5-abs-heatedplatform-skeinforge/speed.csv cupcake-mk5-heated-platform-abs/speed.csv
+4,5c4,5
+< Extrusion Diameter over Thickness (ratio):	1.583
+< Feedrate (mm/s):	30.0
+---
+> Extrusion Diameter over Thickness (ratio):	1.3
+> Feedrate (mm/s):	34.1
+10c10
+< Flowrate PWM Setting (if PWM Setting is Chosen):	230.0
+---
+> Flowrate PWM Setting (if PWM Setting is Chosen):	255.0
+15c15
+< Travel Feedrate (mm/s):	30.0
+---
+> Travel Feedrate (mm/s):	55.0
 
